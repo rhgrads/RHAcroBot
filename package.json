@@ -1,0 +1,27 @@
+{
+  "name": "RHGradBot",
+  "version": "0.1.0",
+  "description": "A telegram bot for Red Hat acronyms",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhgrads/RHAcroBot.git"
+  },
+  "keywords": [
+    "bot",
+    "telegram",
+    "redhat",
+    "acronyms"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhgrads/RHAcroBot/issues"
+  },
+  "homepage": "https://github.com/rhgrads/RHAcroBot#readme",
+  "dependencies": {
+    "telebot": "^1.2.6"
+  }
+}

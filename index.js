@@ -13,9 +13,7 @@ bot.on('/help', (msg) => {
 bot.on('/test', (msg) => {
     console.log('/test triggered')
     var test = acros.ABC;
-    return bot.sendMessage(
-        msg.chat.id,test
-    )
+    return bot.sendMessage(msg.chat.id,test)
 });
 
 bot.on('/ac', (msg) => {

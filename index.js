@@ -3,7 +3,8 @@ const TOKEN = process.env.TOKEN;
 const bot = new TeleBot(TOKEN);
 const fs = require('fs');
 
-var acros = JSON.parse(fs.readFileSync('acronyms.json', 'utf8'));
+acroDoc = JSON.parse(fs.readFileSync('acronyms.json', 'utf8'));
+acros = acroDoc.acronyms;
 
 bot.on('/help', (msg) => {
     console.log('/help triggered')
@@ -12,7 +13,8 @@ bot.on('/help', (msg) => {
 
 bot.on('/test', (msg) => {
     console.log('/test triggered')
-    var test = acros.ABC;
+    console.log(acros.ABC)
+    test = String(acros.ABC);
     return bot.sendMessage(msg.chat.id,test)
 });
 

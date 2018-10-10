@@ -11,7 +11,7 @@ verified:
   AMQP: Advanced Message Queuing Protocol
   AMTU: Abstract Machine Test Utility
   APC: Alternative PHP Cache
-  API: Application Programming Interface @do_not_expand
+  API: Application Programming Interface 
   ARF: Asset Reporting Format
   ARP: Address Resolution Protocol
   ATLAS: Automatically Tuned Linear Algebra Software
@@ -37,7 +37,7 @@ verified:
   CLI: Command-Line Interface
   CMPI: Common Manageability Programming Interface
   CMW: Compartmented Mode Workstation
-  CPU: Central Processing Unit @do_not_expand
+  CPU: Central Processing Unit 
   CRL: Certificate Revocation List
   CTS: Clear to Send
   CUPS: Common Unix Printer System
@@ -72,26 +72,26 @@ verified:
   EIO: Enhanced Input/Outpu @errorcode
   ELS: Extended Link Service
   ENOSPC: No space left on device @errorcode
-  EOF: End of File @do_not_expand
+  EOF: End of File 
   ETU: Elementary Time Unit
   FCAPS: Fault, Configuration, Accounting, Performance, Security
   FD: File Descriptor
   FDCC: Federal Desktop Core Configuration
-  FIPS: Federal Information Processing Standard @do_not_expand
+  FIPS: Federal Information Processing Standard 
   FIRST: Forum of Incident Response and Security Teams
   FISMA: Federal Information Security Management Act
   GC: Graphic context @xorg
   GCC: GNU Compiler Collection
   GDB: GNU Debugger
   GDM: Gnome Display Manager
-  GID: Group Identifier @do_not_expand
+  GID: Group Identifier 
   GNU: GNU's Not Unix!
-  GPL: General Public License @do_not_expand
+  GPL: General Public License 
   GRUB: Grand Unified Bootloader
   GSO: Generic Segmentation Offload
   GSSAPI: Generic Security Services API
-  GTK: GIMP Toolkit. Use GTK+ @do_not_expand
-  GUI: Graphical User Interface @do_not_expand
+  GTK: GIMP Toolkit. Use GTK+ o
+  GUI: Graphical User Interface 
   HBA: Host Bus Adapter
   HCI: Human-Computer Interface
   HID: Human Interface Device
@@ -102,21 +102,21 @@ verified:
   ICMP: Internet Control Message Protocol
   IDE: Integrated Development Environment
   IETF: Internet Engineering Task Force
-  IMAP: Internet Message Access Protocol @do_not_expand
+  IMAP: Internet Message Access Protocol 
   IMSM: Intel Matrix Storage Manager
   IOMMU: Input/Output Memory Management Unit
   IP: Internet Protocol
   IPA: Identity, Policy, Audit
   IPVS: IP Virtual Server
   IPsec: Internet Protocol Security
-  IPv6: Internet Protocol Version 6 @do_not_expand
+  IPv6: Internet Protocol Version 6 
   IR: Interagency Report
   IRQ: Interrupt ReQuest
   ISP: Internet Service Provider
   ISR: Interrupt Service Routine
   ISV: Independent Software Vendor
   ITL: Information Technology Laboratory
-  JDK: Java Development Kit @do_not_expand
+  JDK: Java Development Kit 
   JRE: Java Runtime Environment
   JSON: Javascript Object Notation
   LAPACK: Linear Algebra PACKage
@@ -132,13 +132,13 @@ verified:
   LVS: Linux Virtual Server
   MAC: Message Authentication Code @FIPS
   MCE: Machine Check Exception
-  MD5: Message Digest algorithm @do_not_expand
+  MD5: Message Digest algorithm 
   MDA: Model Driven Architecture
   MGID: Multicast Global Identifier
   MW: Merriam and Webster
   NCP: National Checklist Program
   NDR: Network Data Representation @Samba
-  NFS: Network File System @do_not_expand
+  NFS: Network File System 
   NIAP: National Information Assurance Partnership
   NISPOM: National Industrial Security Program Operating Manual
   NIST: National Institute of Standards and Technology
@@ -163,18 +163,18 @@ verified:
   PAM: Pluggable Authentication Module @SELinux
   PAPI: Performance Application Programming Interface
   PAPR: Power Architecture Platform Requirements
-  PC: personal computer@do_not_expand
+  PC: personal computer
   PCM: Pulse Code Modification
   PCP: Performance Co-Pilot
   PDA: personal digital assistant
   PIB: Partner Inspection Build
-  PID: Process Identifier @do_not_expand
+  PID: Process Identifier 
   PITR: Point-In-Time Recovery
   PIV: Personal Identity Verification
   PKI: Public Key Infrastructure
   PMU: Power Management Unit
   POD: Plain Old Documentation @Perl
-  POSIX: Portable Operation System Interface @do_not_expand
+  POSIX: Portable Operation System Interface 
   PSU: Power Supply Unit
   PV: Physical Volume
   PXE: Pre-Boot Execution Environment
@@ -190,7 +190,7 @@ verified:
   RG: Resource Group
   RPC: Remote Procedure Call
   RSB: resource block
-  RPM: RPM Package Manager @do_not_expand
+  RPM: RPM Package Manager 
   RTS: Request to Send
   SACK: Selective Acknowledgement
   SAM: Subscription Asset Manager
@@ -201,7 +201,7 @@ verified:
   SCTP: Stream Control Transmission Protocol
   SCU: SCSI Controller Unit
   SDL: Simple DirectMedia Layer
-  SEGV: Segmentation Violation @do_not_expand
+  SEGV: Segmentation Violation 
   SFCB: Small Footprint CIM Broker
   SFTP: Secure Shell File Transfer Protocol
   SIMD: Single Instruction, Multiple Data
@@ -216,9 +216,9 @@ verified:
   SOAP: Simple Object Access Protocol
   SPARC: Scalable Processor ARChitecture
   SPICE: Simple Protocol For Computing Environments
-  SQL: Structured Query Language @do_not_expand
+  SQL: Structured Query Language 
   SSE3: Streaming SIMD Extensions 3
-  SSH: Secure Shell @do_not_expand
+  SSH: Secure Shell 
   SSL: Secure Sockets Layer
   STIG: Security Technical Implementation Guide
   SUT: System Under Test
@@ -231,16 +231,16 @@ verified:
   TUI: Text Paste/Terminal User Interface
   UDP: User Datagram Protocol
   UE: Unbalanced Error
-  UID: User Identifier @do_not_expand
+  UID: User Identifier 
   URB: USB Request Block
-  URI: Uniform Resource Identifier @do_not_expand
-  URL: Uniform Resource Locator @do_not_expand
+  URI: Uniform Resource Identifier 
+  URL: Uniform Resource Locator 
   URN: Uniform Resource Number
   USGCB: United States Government Configuration Baseline
   UTC: Coordinated Universal Time
   UUID: Universally Unique Identifier
   VAR: value-added reseller
-  VDSM: Virtual Desktop Server Management @do_not_expand
+  VDSM: Virtual Desktop Server Management 
   VHDX: Hyper-V virtual hard disk
   VIF: Virtual Interface
   VIM: Vi IMproved
@@ -258,7 +258,7 @@ verified:
   XDR: Cross-Domain Request
   atime: access time
   auid: audit ID
-  bash: Bourne-Again SHell @do_not_expand
+  bash: Bourne-Again SHell 
   cgroups: control groups
   ctime: change time
   cwnd: congestion window
@@ -462,7 +462,7 @@ virt:
   BDS: Block Driver State @virt
   DomU: unprivileged domain @virt @xen
   FLR: Function Level Reset @virt
-  KVM: Kernel-based Virtual Machine @virt @do_not_expand
+  KVM: Kernel-based Virtual Machine @virt 
   PF: Physical Function @virt
   QEMU: Quick Emulator @virt
   SR-IOV: Single Root I/O Virtualization @virt
@@ -476,11 +476,11 @@ networking:
   ASIC: application-specific integrated circuit @networking @hardware
   CGI: common gateway interface @networking
   DHCP: dynamic host configuration protocol @networking
-  DNS: Domain Name System @networking @do_not_expand
+  DNS: Domain Name System @networking 
   MIME: Multipurpose Internet Mail Extension @networking
   NCP: Network Control Protocol @networking
   NAT: Network Address Translation @networking
-  NIS: Network Information Service @networking @do_not_expand
+  NIS: Network Information Service @networking 
   VPN: Virtual Private Network @networking
   TSO: TCP Segmentation Offload @networking
   ECN: Explicit Congestion Notification @networking
@@ -506,7 +506,7 @@ selinux:
   MCS: Multi-Category Security @selinux
   MLS: Multi-Level Security @selinux
   RBAC: Role-Based Access Control @selinux
-  SELinux: Security-Enhanced Linux @do_not_expand @selinux
+  SELinux: Security-Enhanced Linux  @selinux
   SID: Security Identifier @selinux
   SL: Security Level @selinux
   SLIDE: SELinux Integrated Development Environment @selinux
@@ -532,7 +532,7 @@ kernel:
   DRM: Direct Rendering Manager @kernel
   DSO: Dynamic Shared Object @kernel
   DTL: Dispatch Trace Log @kernel
-  DWARF: debugging data format @debugging @do_not_expand @kernel
+  DWARF: debugging data format @debugging  @kernel
   EEH: Enhanced Error Handling @kernel
   EPT: Extended Page Tables @kernel
   FCoE: Fibre Channel over Ethernet @kernel
@@ -626,7 +626,7 @@ standards:
   ANSI: American National Standards Institute @standards
   ISO: International Standards Organization @standards
 openshift:
-  RHC: OpenShift client tools @do_not_use @do_not_expand @OpenShift @RH
+  RHC: OpenShift client tools @do_not_use  @OpenShift @RH
 gss:
   GPO: GSS Program Office @gss @RH
   SD: Support Delivery @gss @RH
@@ -933,7 +933,7 @@ new:
   KPI: key performance indicators
   EWS: Enterprise Web Server (renamed to WS)
   SGML: Standardized Generalized Markup Language
-  XML: EXtensible Markup Language @do_not_expand
+  XML: EXtensible Markup Language 
   IPC: inter-process communication
   EPP: Enterprise Portal Platform
   EWP: Enterprise Web Platform
@@ -952,7 +952,7 @@ new:
   VCS: Version Control System
   EDS: Easy Digital Signage
   AJP: Apache JServ Protocol
-  PCI: Peripheral Component Interconnect @do_not_expand
+  PCI: Peripheral Component Interconnect 
   PReP: PowerPC Reference Platform
   GDTY: Good Day To You @always_expand
   TSE: Technical Support Engineer (now - Frontline)
@@ -966,10 +966,10 @@ new:
   OSGi: Open Service Gateway initiative
   STONITH: Shoot The Offending Node In The Head @cluster
   OBOE: off-by-one error
-  VLAN: Virtual Local Area Network @do_not_expand
+  VLAN: Virtual Local Area Network 
   WLAN: Wireless LAN
   LAN: Local Area Network
-  IQN: iSCSI Qualified Name @do_not_expand
+  IQN: iSCSI Qualified Name 
   WAN: Wide Area Network
   PAN: Personal Area Network
   PDC: Product Definition Center
@@ -978,7 +978,7 @@ new:
   VLV: Virtual List View
   DIT: Directory Information Tree
   DSE: Data-Rich Extraction
-  GPU: Graphics Processing Unit @do_not_expand
+  GPU: Graphics Processing Unit 
   FTP: File Transfer Protocol
   WINE: Wine Is Not an Emulator
   Gambas: Gambas Almost Means Basic
@@ -1178,7 +1178,7 @@ new:
   RSS: Really Simple Syndication or Rich Site Summary
   PPC64LE: Red Hat Enterprise Linux for POWER, little endian
   ICC: Internal Communications Committee @RH
-  UEFI: Unified Extensible Firmware Interface @do_not_expand
+  UEFI: Unified Extensible Firmware Interface 
   UDS: Unix Domain Socket @httpd
   DRM: Digital Rights Management
   DCE: Distributed Computing Environment
@@ -1187,7 +1187,7 @@ new:
   HMAC: Hash-based Message Authentication Code @authentication
   GPG: GNU Privacy Guard @authentication
   IFS: Internal Field Separator
-  PKCS: Public-key Cryptography Standard @do_not_expand @crypt
+  PKCS: Public-key Cryptography Standard  @crypt
   PPC: PowerPC platform
   TN: Technical Notes @RH
   RN: Release Notes @RH
@@ -1203,7 +1203,7 @@ new:
   MDD: Metrics-driven development
   EDAC: Error Detection and Correction
   HERM: Hardware Error Reporting Mechanism
-  GNOME: GNU Network Object Model Environment @do_not_expand
+  GNOME: GNU Network Object Model Environment 
   XIM: X Input Method
   IBus: Intelligent Input Bus
   IPP: Internet Printing Protocol @cups

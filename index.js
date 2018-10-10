@@ -11,3 +11,19 @@ bot.on('/help', (msg) => {
         )
     );
 });
+
+bot.on('/test', (msg) => {
+    console.log('/test triggered')
+    try{
+        var doc = yaml.safeLoad(fs.readFileSync('acronyms.yml', 'utf8'));
+        console.log('Success loading yaml');
+
+    }
+    catch (e) {
+        console.log('Error loading yaml.');
+    }
+    return bot.sendMessage(
+        msg.chat.id(doc)
+    );
+});
+

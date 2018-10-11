@@ -15,11 +15,15 @@ function acroLookup(input){
 
     x = 0;
     output = null;
-    cats = ["acronyms", "redhat", "cryptography", "virt", "networking", "wifi", "libreoffice", "selinux", "kernal", "cloud", "documentation", "standards", "openshift", "gss", "hss", "pciutils", "java", "do_not_use", "memory_mgmt", "salesforce", "tags","eggs", "consulting", "new"];
+    cats = ["acronyms", "redhat", "cryptography", "virt", "networking", "wifi", "libreoffice", "selinux", "kernal", "cloud", "documentation", "standards", "openshift",
+            "gss", "hss", "pciutils", "java", "do_not_use", "memory_mgmt", "salesforce", "tags","eggs", "consulting", "new"];
     cats.forEach(function(element){
-        if(acroDoc[cats[x]][input] != "undefined" && acroDoc[cats[x]][input] != null){
+        if(input in acroDoc[cats[x]]){
             output = acroDoc[cats[x]][input];
         }
+        //if(acroDoc[cats[x]][input] != "undefined" && acroDoc[cats[x]][input] != null){
+        //    output = acroDoc[cats[x]][input];
+        //}
         else{
             x++;
         }
@@ -32,15 +36,10 @@ function acroLookup(input){
 bot.on(/^\/ac (.+)$/, (msg, props) => {
     console.log('/ac triggered')
     console.log(props.match[1])
-    input = props.match[1];
+    input = props.match[1];    
     console.log(acroLookup(input));
-    try{
-        test = acroLookup(input);
-    }
-    catch(e){
-        console.log(e);
-        test = null;
-    }
+    test = acroLookup(input);
+
     if(test != "undefined" && test != null){
         return bot.sendMessage(msg.chat.id,test)
     }

@@ -4,8 +4,7 @@ const bot = new TeleBot(TOKEN);
 const fs = require('fs');
 
 acroDoc = JSON.parse(fs.readFileSync('acronyms.json', 'utf8'));
-acros = acroDoc.acronyms;
-redhat = acroDoc.redhat;
+
 
 bot.on('/help', (msg) => {
     console.log('/help triggered')
@@ -46,7 +45,9 @@ bot.on(/^\/ac (.+)$/, (msg, props) => {
     }
 });
 
+
 bot.on('/test', (msg) => {
+
     console.log('/ac triggered')
     return bot.sendMessage(msg.chat.id, 'Yo')
 });

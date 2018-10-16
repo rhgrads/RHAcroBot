@@ -1,4 +1,3 @@
-// TOKEN=592700300:AAGENvy7-m374VgxO_3sLDBEakmZUJolxxU node index.js
 const TeleBot = require('telebot');
 const TOKEN = process.env.TOKEN;
 const bot = new TeleBot(TOKEN);

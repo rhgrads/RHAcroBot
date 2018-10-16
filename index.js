@@ -18,17 +18,13 @@ function acroLookup(input){
         cats.forEach(function(element){
             for(var key in acroDoc[cats[x]]){
                 if(key.toUpperCase() == input.toUpperCase()){
-                    if(acroDoc[cats[x]][key] != undefined && acroDoc[cats[x]][key] != null){
                         output = acroDoc[cats[x]][key];
-                    }
                 }
             }
-            if(output != undefined && output != null){
-                console.log(output);
-            }
-            else{
+            if(output == undefined || output == null){
                 x++;
             }
+            
         });                    
     }
     catch(e){

@@ -11,28 +11,16 @@ bot.on('/help', (msg) => {
 });
 
 function acroLookup(input){
-    x = 0;
     output = null;
     cats = ["acronyms", "redhat", "cryptography", "virt", "networking", "wifi", "libreoffice", "selinux", "kernal", "cloud", "documentation", "standards", "openshift", "gss", "hss", "pciutils", "java", "do_not_use", "memory_mgmt", "salesforce", "tags","eggs", "consulting", "new"];
-    try{
         cats.forEach(function(element){
-            for(var key in acroDoc[cats[x]]){
+            for(var key in acroDoc[element]){
                 if(key.toUpperCase() == input.toUpperCase()){
-                        output = acroDoc[cats[x]][key];
+                        output = acroDoc[element][key];
                 }
-            }
-            if(output == undefined || output == null){
-                x++;
-            }
-            
+            }            
         });                    
-    }
-    catch(e){
-        console.log("Error finding Acronym");
-        output = "undefined";
-    }
-    
-    return output;
+      return output;
 }
 
 bot.on(/^\/ac (.+)$/, (msg, props) => {

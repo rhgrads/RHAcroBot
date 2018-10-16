@@ -1,3 +1,4 @@
+// TOKEN=592700300:AAGENvy7-m374VgxO_3sLDBEakmZUJolxxU node index.js
 const TeleBot = require('telebot');
 const TOKEN = process.env.TOKEN;
 const bot = new TeleBot(TOKEN);
@@ -10,20 +11,25 @@ bot.on('/help', (msg) => {
 });
 
 function acroLookup(input){
-
     x = 0;
     output = null;
     cats = ["acronyms", "redhat", "cryptography", "virt", "networking", "wifi", "libreoffice", "selinux", "kernal", "cloud", "documentation", "standards", "openshift", "gss", "hss", "pciutils", "java", "do_not_use", "memory_mgmt", "salesforce", "tags","eggs", "consulting", "new"];
     try{
         cats.forEach(function(element){
-            if(acroDoc[cats[x]][input] != "undefined" && acroDoc[cats[x]][input] != null){
-                output = acroDoc[cats[x]][input];
+            for(var key in acroDoc[cats[x]]){
+                if(key.toUpperCase() == input.toUpperCase()){
+                    if(acroDoc[cats[x]][key] != undefined && acroDoc[cats[x]][key] != null){
+                        output = acroDoc[cats[x]][key];
+                    }
+                }
+            }
+            if(output != undefined && output != null){
+                console.log(output);
             }
             else{
                 x++;
             }
-        
-        });
+        });                    
     }
     catch(e){
         console.log("Error finding Acronym");
@@ -37,8 +43,8 @@ bot.on(/^\/ac (.+)$/, (msg, props) => {
     console.log('/ac triggered')
     console.log(props.match[1])
     input = props.match[1];    
-    console.log(acroLookup(input));
     test = acroLookup(input);
+    console.log(test);
 
     if(test != "undefined" && test != null){
         return bot.sendMessage(msg.chat.id,test)

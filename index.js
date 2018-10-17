@@ -22,6 +22,10 @@ function acroLookup(input){
       return output;
 }
 
+
+
+//Chris was here
+
 bot.on(/^\/ac (.+)$/, (msg, props) => {
     console.log('/ac triggered')
     console.log(props.match[1])

@@ -1,5 +1,5 @@
 const TeleBot = require('telebot');
-const TOKEN = process.env.TOKEN;
+const TOKEN = process.env.acrotoken;
 const bot = new TeleBot(TOKEN);
 const fs = require('fs');
 acroDoc = JSON.parse(fs.readFileSync('acronyms.json', 'utf8'));

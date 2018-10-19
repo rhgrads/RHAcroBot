@@ -5,16 +5,15 @@ const fs = require('fs');
 acroDoc = JSON.parse(fs.readFileSync('acronyms.json', 'utf8'));
 
 function acroLookup(input){
-    output = null;
-    cats = ["acronyms", "redhat", "cryptography", "virt", "networking", "wifi", "libreoffice", "selinux", "kernal", "cloud", "documentation", "standards", "openshift", "gss", "hss", "pciutils", "java", "do_not_use", "memory_mgmt", "salesforce", "tags","eggs", "consulting", "new"];
-        cats.forEach(function(element){
-            for(var key in acroDoc[element]){
-                if(key.toUpperCase() == input.toUpperCase()){
-                        output = acroDoc[element][key];
-                }
-            }            
-        });                    
-      return output;
+    output = null
+    for(var category in acroDoc) {
+        for(var key in acroDoc[category]) {
+            if(key.toUpperCase() == input.toUpperCase()){
+                output = acroDoc[category][key];
+            }
+        }
+    }
+    return output;
 }
 
 bot.on('/help', (msg) => {

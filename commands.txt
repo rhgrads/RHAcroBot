@@ -1,3 +1,0 @@
-help - help
-ac - Search for an acronym. USAGE: /ac <acronym>
-test - For testing purposes!

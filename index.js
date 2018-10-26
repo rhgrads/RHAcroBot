@@ -38,10 +38,37 @@ bot.on(/^\/ac (.+)$/, (msg, props) => {
 });
 
 
-bot.on('/test', (msg) => {
+// bot.on('/test', (msg) => {
 
-    console.log('/test triggered')
-    return bot.sendMessage(msg.chat.id, 'Yo')
+//     console.log('/test triggered')
+//     return bot.sendMessage(msg.chat.id, 'Yo')
+// });
+bot.on(/^\/test (.+)$/, (msg, props) => {
+    input = props.match[1];
+    fs.appendFile('suggestions.txt', input, function(err){
+        if(err){
+            console.log('Error '+err);
+            return bot.sendMessage(msg.chat.id, 'An error occured please try again.')
+        }
+        else{
+            console.log('Suggestion submitted');
+            return bot.sendMessage(msg.chat.id, 'Suggestion submitted.')
+        };
+    })
+});
+
+bot.on(/^\/suggest (.+)$/, (msg, props) => {
+    input = props.match[1];
+    fs.appendFile('suggestions.txt', (input + "\n"), function(err){
+        if(err){
+            console.log('Error '+err);
+            return bot.sendMessage(msg.chat.id, 'An error occured please try again.')
+        }
+        else{
+            console.log('Suggestion submitted');
+            return bot.sendMessage(msg.chat.id, 'Suggestion submitted.')
+        };
+    })
 });
 
 bot.start()

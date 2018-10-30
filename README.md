@@ -10,7 +10,7 @@ Collaborative bot ownership isn't currently possible, so a shared telegram accou
 **Commands:**  
 *help - help  
 ac - Search for an acronym. USAGE: /ac \<acronym\>   
-test - For testing purposes!*
+suggest - suggest an acronym USAGE: /suggest \<acronym and description\>
 
 ### Useful Links
 Telegram bot docs: [https://core.telegram.org/bots](https://core.telegram.org/bots)  

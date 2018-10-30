@@ -6,7 +6,11 @@ acroDoc = JSON.parse(fs.readFileSync('acronyms.json', 'utf8'));
 
 bot.on('/help', (msg) => {
     console.log('/help triggered')
-    return bot.sendMessage(msg.chat.id,' I am the Red Hat Acrobot, I help decypher acronyms used within the company.')
+    return bot.sendMessage(msg.chat.id,' I am the Red Hat Acrobot, I help decypher acronyms used within the company.\n Commands:\n /help - Help message.\n /ac <acronym> - Acronym lookup.\n /suggest <suggestion> - Suggest new acronyms or features.\n Any other issues, please see our GIT repository - https://github.com/rhgrads/RHAcroBot')
+});
+bot.on('/HELP', (msg) => {
+    console.log('/help triggered')
+    return bot.sendMessage(msg.chat.id,' I am the Red Hat Acrobot, I help decypher acronyms used within the company.\n Commands:\n /help - Help message.\n /ac <acronym> - Acronym lookup.\n /suggest <suggestion> - Suggest new acronyms or features.\n Any other issues, please see our GIT repository - https://github.com/rhgrads/RHAcroBot')
 });
 
 function acroLookup(input){
@@ -36,16 +40,24 @@ bot.on(/^\/ac (.+)$/, (msg, props) => {
         return bot.sendMessage(msg.chat.id, 'Acronym not found.')
     }
 });
+bot.on(/^\/AC (.+)$/, (msg, props) => {
+    console.log('/ac triggered')
+    console.log(props.match[1])
+    input = props.match[1];    
+    test = acroLookup(input);
+    console.log(test);
 
+    if(test != "undefined" && test != null){
+        return bot.sendMessage(msg.chat.id,test)
+    }
+    else{
+        return bot.sendMessage(msg.chat.id, 'Acronym not found.')
+    }
+});
 
-// bot.on('/test', (msg) => {
-
-//     console.log('/test triggered')
-//     return bot.sendMessage(msg.chat.id, 'Yo')
-// });
-bot.on(/^\/test (.+)$/, (msg, props) => {
+bot.on(/^\/suggest (.+)$/, (msg, props) => {
     input = props.match[1];
-    fs.appendFile('suggestions.txt', input, function(err){
+    fs.appendFile('suggestions.txt', (input + "\n"), function(err){
         if(err){
             console.log('Error '+err);
             return bot.sendMessage(msg.chat.id, 'An error occured please try again.')
@@ -56,8 +68,7 @@ bot.on(/^\/test (.+)$/, (msg, props) => {
         };
     })
 });
-
-bot.on(/^\/suggest (.+)$/, (msg, props) => {
+bot.on(/^\/SUGGEST (.+)$/, (msg, props) => {
     input = props.match[1];
     fs.appendFile('suggestions.txt', (input + "\n"), function(err){
         if(err){

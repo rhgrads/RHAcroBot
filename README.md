@@ -13,5 +13,7 @@ ac - Search for an acronym. USAGE: /ac \<acronym\>
 suggest - suggest an acronym USAGE: /suggest \<acronym and description\>
 
 ### Useful Links
+Installation and usage instructions: [https://github.com/rhgrads/RHAcroBot/wiki] (https://github.com/rhgrads/RHAcroBot/wiki)
 Telegram bot docs: [https://core.telegram.org/bots](https://core.telegram.org/bots)  
 Telebot npm package: [https://www.npmjs.com/package/telebot](https://www.npmjs.com/package/telebot)
+
